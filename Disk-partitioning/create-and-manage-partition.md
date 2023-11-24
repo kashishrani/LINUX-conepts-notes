@@ -84,4 +84,14 @@ Summary of the commands and their purposes:
     - Purpose: Deactivates the specified swap partition.
     - Usage: `swapoff /dev/sdX#`
 
+19. **df -h:**
+    - show the mounting details on the disk
+
 These commands collectively serve the purpose of managing partitions in Linux, covering tasks such as creation, deletion, formatting, and mounting, with variations depending on the specific requirements and partition types.
+
+
+
+**NOTE:** The mounting done through this way is not permanent, this means that it will be removed when system is reeboted. To avoid this, an entry related to monting should be make in the fstab file:
+partition-name dir-name filesys-type defaults
+After making this entry execute following command to execute it:
+    mount -a 
