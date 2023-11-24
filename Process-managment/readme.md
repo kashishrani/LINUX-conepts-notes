@@ -65,6 +65,53 @@
 
 - **df:**
   - Shows disk space usage for file systems (`df`).
+  - options of this command (flags)
+
+1. **-a, --all:**
+   - Include pseudo, duplicate, and remote file systems.
+
+2. **-B, --block-size=SIZE:**
+   - Scale sizes by SIZE before printing them.
+   - Example: '-BM' prints sizes in units of 1,048,576 bytes.
+
+3. **-h, --human-readable:**
+   - Display sizes in powers of 1024 (e.g., 1023M).
+
+4. **-H, --si:**
+   - Show sizes in powers of 1000 (e.g., 1.1G).
+
+5. **-i, --inodes:**
+   - List inode information instead of block usage.
+
+6. **-l, --local:**
+   - Limit the listing to local file systems.
+
+7. **--no-sync:**
+   - Do not invoke sync before getting usage info (default).
+
+8. **--output[=FIELD_LIST]:**
+   - Use the output format defined by FIELD_LIST or print all fields if FIELD_LIST is omitted.
+
+9. **-P, --portability:**
+   - Use the POSIX output format.
+
+10. **--total:**
+    - Exclude all entries insignificant to available space and produce a total.
+
+11. **-t, --type=TYPE:**
+    - Limit the listing to file systems of type TYPE.
+
+12. **-T, --print-type:**
+    - Display the file system type.
+
+13. **-x, --exclude-type=TYPE:**
+    - Limit the listing to file systems not of type TYPE.
+
+14. **--help:**
+    - Display the help manual with brief information about the supported options.
+
+15. **--version:**
+    - Display the version information of the `df` command.
 
 - **free:**
   - Displays total, used, and free physical and swap memory.
